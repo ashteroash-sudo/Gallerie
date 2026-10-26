@@ -351,11 +351,11 @@
         await seq(
           [
             "analyse du tunnel de maintenance...",
-            "  propriétaire du tunnel ....... evoss  (Ezra Voss, ARGUS Sécurité)",
-            "  ouvert le .................... 28/09, 04:12",
-            "  dernière rotation de clé ..... 28/09",
-            "  format de clé ................ XXXX-NNNN",
-            ["  conformité politique ARGUS .. NON CONFORME (clé dérivée d'informations personnelles)", "warn"],
+            "  propriétaire du tunnel ....... Ezra VOSS (ARGUS Sécurité)",
+            "  date d'installation .......... 28/09",
+            "  format de clé ................ NOM-JJMM   (ex : DUPONT-0101)",
+            ["  aide-mémoire de l'utilisateur  « mon nom + le jour où j'ai tout installé »", "warn"],
+            ["  conformité politique ARGUS .. NON CONFORME", "warn"],
           ],
           350
         );
