@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ravenscourt & Fils — Importateurs d'Art depuis 1897</title>
+  <meta name="description" content="Ravenscourt & Fils, maison d'importation d'art fondée à Anvers en 1897, aujourd'hui basée à Chicago." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Cinzel:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="grain">
+
+  <!-- ===================== SITE PUBLIC ===================== -->
+  <nav class="nav">
+    <a href="#" class="brand"><span class="star">✦</span> RAVENSCOURT &amp; FILS</a>
+    <div class="nav-links">
+      <a href="#collection">Collection</a>
+      <a href="#maison">La Maison</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="btn-outline" id="btn-connexion">Connexion</button>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-inner">
+      <p class="eyebrow flicker">Fondés à Anvers en 1897 — aujourd'hui basés à Chicago</p>
+      <h1>L'art véritable ne se vend pas.<br /><em>Il se transmet.</em></h1>
+      <p class="lead">Ravenscourt &amp; Fils importe et authentifie des œuvres d'exception pour une clientèle privée, discrète, et particulièrement patiente. Chaque pièce a une histoire — certaines plus anciennes qu'on ne l'imagine.</p>
+      <div class="hero-cta">
+        <a href="#collection" class="btn-gold">Découvrir la collection</a>
+        <a href="#contact" class="btn-ghost">Prendre rendez-vous</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="collection" class="section">
+    <div class="section-head">
+      <div>
+        <h2>La Collection</h2>
+        <p class="muted">Un aperçu de nos catalogues privés. Les pièces réservées restent visibles à titre de référence.</p>
+      </div>
+      <div class="filters" id="filtres" role="tablist" aria-label="Filtrer par catalogue">
+        <button class="filter on" data-cat="tous">Tout</button>
+        <button class="filter" data-cat="I">Cat. I — Antiquités</button>
+        <button class="filter" data-cat="II">Cat. II — Maîtres flamands</button>
+        <button class="filter" data-cat="III">Cat. III — Symbolistes &amp; visionnaires</button>
+      </div>
+    </div>
+    <div class="gallery" id="galerie"></div>
+  </section>
+
+  <section id="maison" class="section section-dark">
+    <div class="narrow">
+      <h2>La Maison</h2>
+      <p>Depuis quatre générations, la famille Ravenscourt sillonne les salons privés, les successions discrètes et les ventes qui ne figurent dans aucun catalogue public. Notre réseau s'étend d'Anvers à Venise, de Vienne à Buenos Aires — et depuis peu, de Chicago à l'ensemble du Midwest.</p>
+      <p>Notre directeur des acquisitions, M. <span class="pnj-proprio">Rudy Montero</span>, dirige depuis Chicago l'antenne nord-américaine de la maison, et entretient des relations de longue date avec certains des collectionneurs les plus exigeants — et les plus secrets — du continent.</p>
+      <p class="muted small">Rendez-vous uniquement en soirée. Toutes nos transactions sont confidentielles.</p>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div>
+      <p class="footer-brand">RAVENSCOURT &amp; FILS</p>
+      <p class="muted small">440 N Wabash Ave, Chicago, IL</p>
+      <p class="muted small">contact@ravenscourt-arts.example</p>
+      <p class="muted tiny">Reproductions : Wikimedia Commons, domaine public.</p>
+    </div>
+    <div class="footer-right">
+      <p>© 1897–2026 Ravenscourt &amp; Fils. Tous droits réservés.</p>
+      <button id="btn-technique" class="secret-link">build v2.5.0 · maintenance</button>
+    </div>
+  </footer>
+
+  <!-- ===================== FENÊTRES (remplies par app.js) ===================== -->
+  <div id="calque"></div>
+
+  <script src="donnees.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
