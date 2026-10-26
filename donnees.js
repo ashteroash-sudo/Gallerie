@@ -28,7 +28,10 @@ const CONFIG = {
      ou après un échec sur l'accès technique. */
   hack: {
     motSecretClavier: "toreador",
-    codesContournement: ["NOCTURNE-31", "port31"], // codes que tu peux donner sur un jet réussi
+    // Logique du code : le technicien d'ARGUS (Ezra Voss) utilise NOM-JJMM
+    // = son nom + la date d'installation d'ARGUS-10 (28/09), toutes deux visibles avec la commande SCAN.
+    // Sur un jet réussi, tu peux leur souffler la règle : « ces techniciens mettent leur nom et la date ».
+    codesContournement: ["VOSS-2809"],
     accepterToutCode: false, // true = n'importe quel code marche (comme l'ancien site)
     dureeForceBruteSecondes: 75, // commande FORCE : lente mais marche toujours
   },

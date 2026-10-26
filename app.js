@@ -246,6 +246,7 @@
     "Le tunnel exige un code de contournement.",
     "  → entrez le code, ou",
     "  → tapez FORCE pour une attaque par force brute (lente, laisse des traces)",
+    "  → tapez SCAN pour analyser le tunnel",
     "  → tapez AIDE pour la liste des commandes",
   ];
   let terminalBloqueJusqua = 0;
@@ -337,12 +338,30 @@
       const cmd = v.toLowerCase();
 
       if (cmd === "aide" || cmd === "help") {
+        ecrire("  SCAN     analyser le tunnel de maintenance");
         ecrire("  <code>   tenter un code de contournement");
         ecrire("  FORCE    attaque par force brute (≈" + CONFIG.hack.dureeForceBruteSecondes + " s, augmente la trace)");
         ecrire("  EXIT     fermer le terminal");
         return;
       }
       if (cmd === "exit" || cmd === "quit") return fermer();
+
+      if (cmd === "scan") {
+        occupe = true;
+        await seq(
+          [
+            "analyse du tunnel de maintenance...",
+            "  propriétaire du tunnel ....... evoss  (Ezra Voss, ARGUS Sécurité)",
+            "  ouvert le .................... 28/09, 04:12",
+            "  dernière rotation de clé ..... 28/09",
+            "  format de clé ................ XXXX-NNNN",
+            ["  conformité politique ARGUS .. NON CONFORME (clé dérivée d'informations personnelles)", "warn"],
+          ],
+          350
+        );
+        occupe = false;
+        return;
+      }
 
       if (cmd === "force") {
         occupe = true;
@@ -567,8 +586,8 @@
       <div class="mj-in">
         <table>
           <tr><td>Client</td><td>${esc(CONFIG.client.identifiant)} / ${esc(CONFIG.client.motDePasse)}</td></tr>
-          <tr><td>Technique</td><td>${esc(CONFIG.technique.identifiant)} / ${esc(CONFIG.technique.motDePasse)}<br><span style="color:#888">lien « build v2.5.0 » en bas</span></td></tr>
-          <tr><td>Hack</td><td>taper « ${esc(CONFIG.hack.motSecretClavier)} » ou Ctrl+Alt+R<br>codes : ${CONFIG.hack.codesContournement.map(esc).join(", ")}<br>ou FORCE (${CONFIG.hack.dureeForceBruteSecondes} s)</td></tr>
+          <tr><td>Technique</td><td>${esc(CONFIG.technique.identifiant)} / ${esc(CONFIG.technique.motDePasse)}<br><span style="color:#888">lien « build v2.5.0 » en bas ; identifiants oubliés dans le code source de la page (Ctrl+U)</span></td></tr>
+          <tr><td>Hack</td><td>taper « ${esc(CONFIG.hack.motSecretClavier)} » ou Ctrl+Alt+R<br>codes : ${CONFIG.hack.codesContournement.map(esc).join(", ")} (nom + date vus avec SCAN)<br>ou FORCE (${CONFIG.hack.dureeForceBruteSecondes} s)</td></tr>
           <tr><td>Chiffré</td><td>${esc(CONFIG.dossierChiffre.phraseDePasse)}</td></tr>
         </table>
         <button id="mj-b">Ouvrir le bureau</button>
