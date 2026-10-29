@@ -301,8 +301,8 @@ Le service comptabilité`,
     id: "lakeshore",
     dossier: "reception",
     tri: 9,
-    de: "Lakeshore Fine Art Logistics",
-    adresse: "dispatch@lakeshore-fal.example",
+    de: "Lakeshore Freight",
+    adresse: "dispatch@lakeshore-freight.example",
     a: PNJ.proprietaire.email,
     objet: "Confirmation : 4 caisses climatisées — réf. LSF-2291",
     date: "16 oct., 11:05",
@@ -318,7 +318,8 @@ Arrêt de jour prévu à notre entrepôt sous douane de Gary (IN) avant la livra
 Référence à rappeler : LSF-2291.
 
 Cordialement,
-Dispatch — Lakeshore Fine Art Logistics`,
+Dispatch — Lakeshore Freight, Midwest Division
+Filiale du groupe BHL Transport`,
   },
   {
     id: "bhl",
