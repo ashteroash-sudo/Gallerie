@@ -304,7 +304,7 @@ Le service comptabilité`,
     de: "Lakeshore Freight",
     adresse: "dispatch@lakeshore-freight.example",
     a: PNJ.proprietaire.email,
-    objet: "Confirmation : 4 caisses climatisées — réf. LSF-2291",
+    objet: "Confirmation : 4 caisses climatisées",
     date: "16 oct., 11:05",
     nonLu: false,
     corps: `Bonjour M. Montero,
@@ -315,7 +315,7 @@ Comme demandé, le véhicule sera banalisé (aucun logo) et l'équipage sera cel
 
 Arrêt de jour prévu à notre entrepôt sous douane de Gary (IN) avant la livraison finale de nuit, conformément à vos instructions.
 
-Référence à rappeler : LSF-2291.
+Le numéro de colis (format XXX-XXXX) figure sur le bordereau apposé sur chaque caisse. Merci de le rappeler pour tout suivi.
 
 Cordialement,
 Dispatch — Lakeshore Freight, Midwest Division
@@ -532,7 +532,7 @@ Les quatre caisses sont arrivées d'Anvers à Port Newark. Voici les modalités,
   • Caisse 4 — Le masque de Khonsou, et l'objet dont nous avons parlé de vive voix.
 
   TRANSPORT
-  • Porteur climatisé Lakeshore, blanc, banalisé — réf. LSF-2291
+  • Porteur climatisé Lakeshore, blanc, banalisé
   • Itinéraire : Port Newark → I-80 → Indiana Toll Road (I-90)
   • Arrêt de jour : entrepôt sous douane Lakeshore, Gary (Indiana), quartier de Buffington Harbor
   • Départ de Gary à la tombée de la nuit, livraison au lieu habituel vers 23 h
