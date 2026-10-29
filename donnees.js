@@ -527,4 +527,57 @@ Je ferai surveiller l'entrepôt de mon côté. Discrètement.
 
 W.M.`,
   },
+  {
+    id: "wm4",
+    dossier: "chiffre",
+    tri: 14,
+    de: PNJ.primogene.nom,
+    adresse: PNJ.primogene.email,
+    a: PNJ.proprietaire.email,
+    objet: "Gary",
+    date: "4 nov., 03:26",
+    nonLu: true,
+    corps: `Rudy,
+
+On me rapporte que Gary s'agite. Des rixes, des disparitions, des gens qui n'ont rien à y faire et qui s'y installent. Et un transport incendié le mois dernier, sur une route que vos camions empruntent, si je ne m'abuse. Un camion entier réduit en carcasse noire au bord de la chaussée.
+
+Je n'arrive pas à chasser cette image. Vous savez ce que le feu fait à une toile ? Le vernis cloque d'abord, puis la couche picturale se rétracte, se craquelle comme une peau trop longtemps restée au soleil, et le visage disparaît. Pas d'un coup : lentement, en se tordant. Lady Digby a survécu près de quatre siècles. Je refuse qu'elle finisse sur le bas-côté d'une autoroute de l'Indiana parce qu'un imbécile a jugé bon de mettre le feu à une cargaison.
+
+Je veux des garanties. La température des caisses, l'hygrométrie, le calage. Je veux savoir qui conduit, qui les accompagne, et à quel point ces gens sont prêts à se mettre entre une flamme et une caisse. Ces œuvres ont traversé des guerres, des révolutions, des incendies de palais. Elles ne disparaîtront pas sous ma responsabilité.
+
+La Belle Dame sans merci ne restera pas chez moi : je la destine au Superintendent. Un présent, de ceux qui ouvrent des portes et en ferment d'autres. Elle doit donc arriver intacte, sans un éclat, sans une rayure sur le cadre. Je compte sur la discrétion habituelle vis-à-vis de qui vous savez. Il ne doit pas apprendre d'où elle vient, ni pour qui elle part.
+
+Une dernière chose, qui m'a laissé perplexe en relisant votre courrier du 20. Vous évoquez, pour la caisse 4, « l'objet dont nous avons parlé de vive voix ». Je ne me souviens pas vous en avoir parlé. Ni de vive voix, ni autrement.
+
+Éclairez-moi.
+
+W.M.`,
+  },
+  {
+    id: "wm4-rep",
+    dossier: "chiffre",
+    tri: 15,
+    de: PNJ.proprietaire.nom,
+    adresse: PNJ.proprietaire.email,
+    a: `${PNJ.primogene.nom} <${PNJ.primogene.email}>`,
+    objet: "Re: Gary",
+    date: "5 nov., 00:58",
+    nonLu: true,
+    corps: `Monsieur le Primogène,
+
+Je comprends vos inquiétudes, et je les partage. Soyez rassuré.
+
+Les caisses voyagent à 18 °C, 50 % d'humidité, calées sur mesure, doublées d'une protection ignifugée. Chaque toile est sous sa propre enveloppe. Rien de ce qui est arrivé à ce camion ne peut arriver au nôtre.
+
+Ce ne seront pas des chauffeurs de location : ce sont des hommes à moi. Discrets, armés, et qui savent ce qu'il en coûte de décevoir. Ils ne s'arrêteront que là où je l'ai prévu, et personne ne s'approchera des caisses sans qu'ils l'aient décidé.
+
+La Belle Dame partira emballée à part, sans marque de la maison. Celui à qui elle est destinée ne saura que ce que vous voudrez bien lui dire, et l'autre n'en saura rien. Comme toujours.
+
+Quant à l'objet de la caisse 4 : vous me l'avez demandé vous-même, au Drake, le soir du 12. Vous aviez l'air las.
+
+Je ne m'en offusque pas. Ces dernières semaines ont pesé sur chacun de nous.
+
+Votre obligé,
+R. Montero`,
+  },
 ];
