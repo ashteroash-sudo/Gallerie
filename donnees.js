@@ -321,6 +321,42 @@ Cordialement,
 Dispatch — Lakeshore Fine Art Logistics`,
   },
   {
+    id: "bhl",
+    dossier: "reception",
+    tri: 14.5,
+    de: "BHL Transport — Service Clients",
+    adresse: "no-reply@bhl-transport.example",
+    a: PNJ.proprietaire.email,
+    objet: "Votre envoi est en cours d'acheminement",
+    date: "5 nov., 07:42",
+    nonLu: true,
+    corps: `Ceci est un message automatique, merci de ne pas y répondre.
+
+Bonjour,
+
+Nous vous informons que votre cargaison a été prise en charge et qu'elle est actuellement en cours d'acheminement.
+
+Le transport et la livraison finale sont assurés par notre filiale :
+    LAKESHORE FREIGHT — Midwest Division
+
+Vous pouvez suivre l'état de votre envoi à tout moment sur notre espace client :
+    https://lakeshore-freight.vercel.app/
+
+  • Identifiez-vous avec votre numéro client habituel : Gall-RM-0919
+  • Pour les livraisons en cours, saisissez votre numéro de colis (format : XXX-XXXX), indiqué sur votre bordereau d'expédition.
+
+Les informations de suivi sont mises à jour à chaque étape (prise en charge, transit, entrepôt, livraison). Les délais peuvent varier en fonction des conditions de circulation et des contrôles douaniers.
+
+Nous vous remercions de votre confiance.
+
+L'équipe BHL Transport
+Service Clients — disponible 24 h/24, 7 j/7
+
+—
+BHL Transport Group · Logistique nationale et internationale
+Ce message et ses pièces jointes sont confidentiels et destinés exclusivement à leur destinataire.`,
+  },
+  {
     id: "vernissage",
     dossier: "reception",
     tri: 11,

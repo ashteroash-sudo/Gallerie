@@ -501,7 +501,7 @@
                  <div class="addr">${esc(m.adresse)}</div>
                  <div class="to">à : ${esc(m.a)} · ${esc(m.date)}</div>
                </div>
-               <div class="body">${esc(m.corps)}</div>`
+               <div class="body">${esc(m.corps).replace(/https?:\/\/[^\s<]+/g, (u) => `<a href="${u}" target="_blank" rel="noopener" style="color:var(--gold-bright);text-decoration:underline">${u}</a>`)}</div>`
             : '<p class="empty">Sélectionnez un message.</p>'
         }</article>`;
       if (dossierCourant === "chiffre") alerteAffichee = alerteAffichee || CONFIG.dossierChiffre.afficherAlerteIntrusion;
